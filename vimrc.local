@@ -21,6 +21,9 @@ map <Leader>sg :sp<CR>:grep<SPACE>
 map <Leader>te :tabe<SPACE>
 map <Leader>f :FixWhitespace<CR>
 map <Leader>nt :NERDTree<CR>
+map <Leader>ag :Ag<SPACE>
+map <C-c> "*y<CR>
+map <Leader>v "*p<CR>
 
 " Git
 map <Leader>gs :Gstatus<CR>
