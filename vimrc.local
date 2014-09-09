@@ -44,3 +44,5 @@ map <Leader>vc :RVcontroller<SPACE>
 map <Leader>vm :RVmodel<SPACE>
 map <Leader>vv :RVview<SPACE>
 map <Leader>av :AV<CR>
+map <Leader>rv :RV<CR>
+map <Leader>ac :Rcontroller application<CR>
