@@ -28,7 +28,7 @@ map <Leader>v "*p<CR>
 " Git
 map <Leader>gs :Gstatus<CR>
 map <Leader>gd :Gvdiff<CR>
-map <Leader>gac :Gcommit -m -a ""<LEFT>
+map <Leader>gac :Gcommit -am ""<LEFT>
 map <Leader>gc :Gcommit -m ""<LEFT>
 map <Leader>co :Gread<CR>
 map <Leader>ga :Gwrite<CR>
