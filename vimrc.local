@@ -1,0 +1,43 @@
+Plugin 'nanotech/jellybeans.vim'
+Plugin 'tomtom/tcomment_vim'
+Plugin 'bronson/vim-trailing-whitespace'
+Plugin 'scrooloose/nerdtree'
+Plugin 'mattn/gist-vim'
+Plugin 'mattn/webapi-vim'
+Plugin 'rking/ag.vim'
+
+colorscheme jellybeans
+highlight LineNr ctermfg=white
+highlight Visual ctermfg=blue ctermbg=white
+set relativenumber
+
+map <Leader>q :q<CR>
+map <Leader>w :w<CR>
+map <Leader>sv :source ~/.vimrc<CR>
+map <Leader>bi :PluginInstall<CR>
+map <Leader>vi :tabe ~/.vimrc.local<CR>
+map <Leader>ct :!ctags -R<CR>
+map <Leader>sg :sp<CR>:grep<SPACE>
+map <Leader>te :tabe<SPACE>
+map <Leader>f :FixWhitespace<CR>
+map <Leader>nt :NERDTree<CR>
+
+" Git
+map <Leader>gs :Gstatus<CR>
+map <Leader>gd :Gvdiff<CR>
+map <Leader>gac :Gcommit -m -a ""<LEFT>
+map <Leader>gc :Gcommit -m ""<LEFT>
+map <Leader>co :Gread<CR>
+map <Leader>ga :Gwrite<CR>
+map <Leader>gb :Gblame<CR>
+map <Leader>gm :Gmove<SPACE>
+map <Leader>gr :Gremove<CR>
+
+" Rails
+map <Leader>bb :!bundle install<CR>
+map <Leader>sc :sp db/schema.rb<CR>
+map <Leader>m :Rmodel<SPACE>
+map <Leader>vc :RVcontroller<SPACE>
+map <Leader>vm :RVmodel<SPACE>
+map <Leader>vv :RVview<SPACE>
+map <Leader>av :AV<CR>
