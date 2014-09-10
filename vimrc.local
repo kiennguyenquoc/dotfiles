@@ -5,6 +5,7 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'mattn/gist-vim'
 Plugin 'mattn/webapi-vim'
 Plugin 'rking/ag.vim'
+Plugin 'christoomey/vim-tmux-navigator'
 
 colorscheme jellybeans
 highlight LineNr ctermfg=white
