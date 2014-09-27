@@ -47,3 +47,4 @@ map <Leader>vv :RVview<SPACE>
 map <Leader>av :AV<CR>
 map <Leader>rv :RV<CR>
 map <Leader>ac :Rcontroller application<CR>
+map <Leader>rt :e config/routes.rb<CR>
