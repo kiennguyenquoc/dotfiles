@@ -49,4 +49,5 @@ map <Leader>rv :RV<CR>
 map <Leader>ac :Rcontroller application<CR>
 map <Leader>rt :e config/routes.rb<CR>
 map <Leader>ah :RVhelper application<CR>
-map <Leader>gf :e Gemfile<CR>
+map <Leader>g :e Gemfile<CR>
+map <Leader>a <ESC>ggVG<CR>
