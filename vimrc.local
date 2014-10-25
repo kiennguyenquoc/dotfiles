@@ -25,6 +25,8 @@ map <Leader>nt :NERDTree<CR>
 map <Leader>ag :Ag<SPACE>
 map <C-c> "*y<CR>
 map <Leader>v "*p<CR>
+nnoremap <S-CR> O<Esc>j
+nmap <CR> o<Esc>k
 
 " Git
 map <Leader>gs :Gstatus<CR>
