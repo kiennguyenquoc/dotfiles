@@ -1,5 +1,5 @@
+export EDITOR=vim
+export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 export PATH="$PATH:/usr/local/lib/node_modules"
 source $(brew --prefix nvm)/nvm.sh
-
-export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 export DOCKER_HOST=tcp://192.168.59.103:2375

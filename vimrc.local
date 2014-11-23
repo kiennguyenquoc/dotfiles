@@ -6,6 +6,7 @@ Plugin 'mattn/gist-vim'
 Plugin 'mattn/webapi-vim'
 Plugin 'rking/ag.vim'
 Plugin 'christoomey/vim-tmux-navigator'
+Plugin 'tpope/vim-unimpaired'
 
 colorscheme jellybeans
 highlight LineNr ctermfg=white
@@ -27,6 +28,7 @@ map <C-c> "*y<CR>
 map <Leader>v "*p<CR>
 nnoremap <S-CR> O<Esc>j
 nmap <CR> o<Esc>k
+map <Leader>rm :Remove!<CR>
 
 " Git
 map <Leader>gs :Gstatus<CR>
@@ -53,3 +55,5 @@ map <Leader>rt :e config/routes.rb<CR>
 map <Leader>ah :RVhelper application<CR>
 map <Leader>g :e Gemfile<CR>
 map <Leader>a <ESC>ggVG<CR>
+map <Leader>aj <ESC>:e app/assets/javascripts/application.js<CR>
+map <Leader>as <ESC>:e app/assets/stylesheets/application.css.scss<CR>
