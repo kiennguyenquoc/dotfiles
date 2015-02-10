@@ -1,11 +1,11 @@
-Plugin 'nanotech/jellybeans.vim'
-Plugin 'tomtom/tcomment_vim'
 Plugin 'bronson/vim-trailing-whitespace'
-Plugin 'scrooloose/nerdtree'
+Plugin 'christoomey/vim-tmux-navigator'
 Plugin 'mattn/gist-vim'
 Plugin 'mattn/webapi-vim'
+Plugin 'nanotech/jellybeans.vim'
 Plugin 'rking/ag.vim'
-Plugin 'christoomey/vim-tmux-navigator'
+Plugin 'scrooloose/nerdtree'
+Plugin 'tomtom/tcomment_vim'
 Plugin 'tpope/vim-unimpaired'
 
 colorscheme jellybeans
@@ -13,47 +13,52 @@ highlight LineNr ctermfg=white
 highlight Visual ctermfg=blue ctermbg=white
 set relativenumber
 
-map <Leader>q :q<CR>
-map <Leader>w :w<CR>
-map <Leader>sv :source ~/.vimrc<CR>
-map <Leader>bi :PluginInstall<CR>
-map <Leader>vi :tabe ~/.vimrc.local<CR>
-map <Leader>ct :!ctags -R<CR>
-map <Leader>sg :sp<CR>:grep<SPACE>
-map <Leader>te :tabe<SPACE>
-map <Leader>f :FixWhitespace<CR>
-map <Leader>nt :NERDTree<CR>
-map <Leader>ag :Ag<SPACE>
+" Common
 map <C-c> "*y<CR>
-map <Leader>v "*p<CR>
-nnoremap <S-CR> O<Esc>j
-nmap <CR> o<Esc>k
+map <Leader>ag :Ag<SPACE>
+map <Leader>bi :PluginInstall<CR>
+map <Leader>ct :!ctags -R<CR>
+map <Leader>f :FixWhitespace<CR>
+map <Leader>n <C-w>v<C-h>
+map <Leader>nt :NERDTree<CR>
+map <Leader>q :q<CR>
 map <Leader>rm :Remove!<CR>
+map <Leader>sg :sp<CR>:grep<SPACE>
+map <Leader>sv :source ~/.vimrc<CR>
+map <Leader>te :tabe<SPACE>
+map <Leader>v "*p<CR>
+map <Leader>vi :tabe ~/.vimrc.local<CR>
+map <Leader>w :w<CR>
+nmap <CR> o<Esc>k
+nnoremap <S-CR> O<Esc>j
 
 " Git
-map <Leader>gs :Gstatus<CR>
-map <Leader>gd :Gvdiff<CR>
-map <Leader>gac :Gcommit -am ""<LEFT>
-map <Leader>gc :Gcommit -m ""<LEFT>
 map <Leader>co :Gread<CR>
 map <Leader>ga :Gwrite<CR>
+map <Leader>gac :Gcommit -am ""<LEFT>
 map <Leader>gb :Gblame<CR>
+map <Leader>gc :Gcommit -m ""<LEFT>
+map <Leader>gd :Gvdiff<CR>
 map <Leader>gm :Gmove<SPACE>
 map <Leader>gr :Gremove<CR>
+map <Leader>gs :Gstatus<CR>
 
 " Rails
+map <Leader>a <ESC>ggVG<CR>
+map <Leader>ac :Rcontroller application<CR>
+map <Leader>ah :RVhelper application<CR>
+map <Leader>aj <ESC>:e app/assets/javascripts/application.js<CR>
+map <Leader>as <ESC>:e app/assets/stylesheets/application.css.scss<CR>
+map <Leader>av :AV<CR>
 map <Leader>bb :!bundle install<CR>
-map <Leader>sc :sp db/schema.rb<CR>
+map <Leader>c :Rcontroller<SPACE>
+map <Leader>d <ESC>obinding.pry<ESC>
+map <Leader>dv <ESC>o- binding.pry<ESC>
+map <Leader>g :e Gemfile<CR>
 map <Leader>m :Rmodel<SPACE>
+map <Leader>rt :e config/routes.rb<CR>
+map <Leader>rv :RV<CR>
+map <Leader>sc :sp db/schema.rb<CR>
 map <Leader>vc :RVcontroller<SPACE>
 map <Leader>vm :RVmodel<SPACE>
 map <Leader>vv :RVview<SPACE>
-map <Leader>av :AV<CR>
-map <Leader>rv :RV<CR>
-map <Leader>ac :Rcontroller application<CR>
-map <Leader>rt :e config/routes.rb<CR>
-map <Leader>ah :RVhelper application<CR>
-map <Leader>g :e Gemfile<CR>
-map <Leader>a <ESC>ggVG<CR>
-map <Leader>aj <ESC>:e app/assets/javascripts/application.js<CR>
-map <Leader>as <ESC>:e app/assets/stylesheets/application.css.scss<CR>
