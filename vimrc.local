@@ -7,11 +7,16 @@ Plugin 'rking/ag.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'tomtom/tcomment_vim'
 Plugin 'tpope/vim-unimpaired'
+Plugin 'altercation/vim-colors-solarized'
 
-colorscheme jellybeans
+" colorscheme jellybeans
 highlight LineNr ctermfg=white
 highlight Visual ctermfg=blue ctermbg=white
 set relativenumber
+syntax on
+set background=dark
+let g:solarized_termtrans = 1
+colorscheme solarized
 
 " Common
 map <C-c> "*y<CR>
@@ -19,7 +24,7 @@ map <Leader>ag :Ag<SPACE>
 map <Leader>bi :PluginInstall<CR>
 map <Leader>ct :!ctags -R<CR>
 map <Leader>f :FixWhitespace<CR>
-map <Leader>n <C-w>v<C-h>
+map <Leader>n <C-w>v<C-h><SPACE><SPACE>
 map <Leader>nt :NERDTree<CR>
 map <Leader>q :q<CR>
 map <Leader>rm :Remove!<CR>
