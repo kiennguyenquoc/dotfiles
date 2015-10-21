@@ -20,6 +20,7 @@ colorscheme solarized
 
 " Common
 map <C-c> "*y<CR>
+map <C-a> <ESC>gg<S-v>G<ESC>
 map <Leader>ag :Ag<SPACE>
 map <Leader>bi :PluginInstall<CR>
 map <Leader>ct :!ctags -R<CR>
@@ -53,7 +54,7 @@ map <Leader>a <ESC>ggVG<CR>
 map <Leader>ac :Rcontroller application<CR>
 map <Leader>ah :RVhelper application<CR>
 map <Leader>aj <ESC>:e app/assets/javascripts/application.js<CR>
-map <Leader>as <ESC>:e app/assets/stylesheets/application.css.scss<CR>
+map <Leader>as <ESC>:e app/assets/stylesheets/application.scss<CR>
 map <Leader>av :AV<CR>
 map <Leader>bb :!bundle install<CR>
 map <Leader>c :Rcontroller<SPACE>
